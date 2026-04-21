@@ -7,9 +7,9 @@ public class Main {
         Scanner scanner = new Scanner(System.in);
 
 
-        Jogador heroi = new Jogador("Gustavo", 100, 25, 10);
+        Jogador heroi = new Jogador("Gustavo", 100, 25, 10, 100);
 
-        Inimigo monstro = new Inimigo("Goblin", 100, 15, 10, 100);
+        Inimigo monstro = new Inimigo("Goblin", 100, 15, 10, 100, 10);
 
         System.out.println("Um " + monstro.getNome() + " apareceu!");
 

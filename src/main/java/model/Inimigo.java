@@ -13,8 +13,8 @@ import java.util.Random;
 public class Inimigo extends Personagem{
     private int xpFornecido;
 
-    public Inimigo(String nome, int vida, int ataque, int defesa, int xpFornecido){
-        super(nome, vida, ataque, defesa); // ta chamando os atributos da classe mãe para o construtor
+    public Inimigo(String nome, int vida, int ataque, int defesa, int xpFornecido, int vidaMax){
+        super(nome, vida, ataque, defesa, vidaMax); // ta chamando os atributos da classe mãe para o construtor
         this.xpFornecido = xpFornecido;
     }
 

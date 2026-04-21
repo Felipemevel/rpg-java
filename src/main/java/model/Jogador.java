@@ -13,8 +13,8 @@ public class Jogador extends Personagem{
     private long nivel;
     private List<Item> itemJogador = new ArrayList<>();
 
-    public Jogador(String nome, int vida, int ataque, int defesa) {
-        super(nome, vida, ataque, defesa);
+    public Jogador(String nome, int vida, int ataque, int defesa, int vidaMax) {
+        super(nome, vida, ataque, defesa, vidaMax);
         this.xpAtual = 0; // 0 de XP
         this.nivel = 1;   // level
     }
@@ -25,6 +25,7 @@ public class Jogador extends Personagem{
         while (xpAtual >= 100){
             this.nivel += 1;
             this.xpAtual -= 100;
+            this.setVida(this.getVidaMax());
 
             this.setAtaque(this.getAtaque() + 5);
             this.setDefesa(this.getDefesa() + 2);

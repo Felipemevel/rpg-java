@@ -10,8 +10,9 @@ import java.util.Random;
 @AllArgsConstructor
 @Data
 public class Personagem {
-    //TODO REFATORAR E ADICIONAR A vidaMaxima (ISSUE: #1)
+
     private String nome;
+    private int vidaMax;
     private int vida;
     private int ataque;
     private int defesa;
